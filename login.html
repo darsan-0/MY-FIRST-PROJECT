@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in</title>
+</head>
+<style>
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contanier{
+        display:flex;
+        width:900px;
+        height: 600px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .login-section{
+        width: 50%;
+        padding: 40px;;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+    .welcome-section{
+        background-color:brown;
+        width: 50%;
+        padding: 40px;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sign-up{
+        border: 1px solid white;
+        color: white;
+        padding: 8px 10px;
+        border-radius: 25px;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        text-decoration: none;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 0 auto;
+    }
+    .sign-up:hover{
+        background-color: white;
+        color: brown;
+    }
+   .form{
+    display: flex;
+    flex-direction: column;
+   }
+   .label{
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+   input[type="text"],input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+   }
+   button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            color: white;
+            border-radius: 25px;
+            border: none;
+            background-color: brown;
+
+          }
+        .remember-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .remember-link a{
+            text-decoration: none;
+            color: brown;
+        }
+        @media (max-width: 768px) {
+            .contanier{
+                flex-direction: column;
+                width: 90%;
+                height: 100%;
+            }
+            .login-section .welcome-section {
+                padding: 30px;
+                width: 90%;
+            }
+            .welcome-section{
+                padding: 40px 20px ;
+            }
+
+        }
+
+        
+
+</style>
+<body>
+    <div class="contanier">
+        <div class="login-section">
+            <h2>sign in</h2>
+            <form action="">
+                <p>
+                    <label for="">
+                        username
+                    </label><br/>
+                    <input type="text" placeholder="Enter username"/>
+                </p>
+                <p >
+                    <label for="">
+                        password
+                    </label><br/>
+                    <input type="password" placeholder="Enter password"/>
+                </p>
+                      
+                <p class="form-button">
+                    <button>
+                        sign in
+                    </button>
+                </p> 
+                <div class="remember-link">
+                <p>
+                    <input type="checkbox" required/>
+                    <label>
+                        Remember me
+                    </label>
+                </p>
+                <a href="" class="forget-password">forget password?</a>   
+                </div>
+            </form>
+        </div>
+        <div class="welcome-section">
+            <br/>
+            <h2>Welcome to login page</h2>
+            <p>Don't have an account? </p>
+            <a  href="https://www.deepseek.com/" class="sign-up">sign up</a>
+        </div>
+    </div>
+</body>
+</html>

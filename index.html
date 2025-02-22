@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+body{
+    background-color:brown;
+
+  }
+
+
+    .top {
+        background-color:white;
+        width:16%;
+        margin: auto;
+        padding: 0% 2%;
+        border-radius: 20px;
+
+    }
+    .form-field{
+        color: black;  
+        width:80%;
+        padding:10px;
+    }
+    @media (max-width:436px){
+        .top{
+            width: 90%;
+        }
+    }
+    button{
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        width: 45%;
+        font-size: 1.3rem;
+    }
+</style>
+
+<body>
+    <form class="top" action="./login.html">
+        <h1 class="title">Login page</h1>
+        <h1 class="name">DARSAN</h1>
+        <p class="form-field">
+            <label for="">
+                NAME
+            </label><br />
+            <input type="text" placeholder="ENTER YOUR NAME" required />
+        </p>
+        <p class="form-field">
+            <label for="">
+                NUMBER
+            </label><br />
+            <input type="number" placeholder="ENTER YOUR NUMBER" maxlength="10" required />
+        </p>
+        <p class="form-field">
+            <label for="">
+                PASSWORD
+            </label><br />
+            <input type="password" placeholder="ENTER YOUR PASSWORD" required />
+        </p>
+        <p class="form-field">
+            <label>
+                EMAIL
+            </label><br />
+            <input type="email" placeholder="EMAIL-ID" required />
+        </p>
+        <p class="form-radio">
+            <input type="radio" name="Gender" />
+            male
+            <input type="radio" name="Gender" />
+            female
+
+        </p>
+        <p class="form-field">
+            <input type="date">
+        </p>
+        <select>
+            <option value=""> select your state option</option>
+            <option value="">AP</option>
+            <option value="">TS</option>
+            <option value="">DL</option>
+            <option value="">TN</option>
+            <option value="">MH</option>
+            <option value="">JK</option>
+        </select>
+        <p class="form-field">
+            <input type="file">
+        </p>
+        <p class="form-field">
+            <button>
+                submit
+            </button>
+        </p>
+    </form>
+
+</body>
+
+</html>
